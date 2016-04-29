@@ -28,6 +28,10 @@
     "readline-sync": "^1.4.1",
     "rimraf": "^2.5.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjackson/http-client-cookie-jar.git"
+  },
   "babel": {
     "presets": [
       "es2015"
