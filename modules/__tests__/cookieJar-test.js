@@ -40,6 +40,14 @@ describe('cookieJar', () => {
       })
     ))
 
+    describe('and the request already has a Cookie', () => {
+      it('appends to the existing Cookie header', () => (
+        cookieJar(jar)(fetch, url, { headers: { Cookie: 'a=b' } }).then(({ options }) => {
+          expect(options.headers.Cookie).toEqual('a=b;' + cookie.toString())
+        })
+      ))
+    })
+
     it('does not set the Cookie header on subsequent requests to a different URL', () => (
       cookieJar(jar)(fetch, 'http://www.example.org').then(({ options }) => {
         const headers = options.headers || {}
