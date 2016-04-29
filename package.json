@@ -1,6 +1,6 @@
 {
   "name": "http-client-cookie-jar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Cookie jar middleware for http-client",
   "author": "Michael Jackson",
   "license": "MIT",
