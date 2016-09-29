@@ -16,7 +16,7 @@
     "prepublish": "npm run build"
   },
   "peerDependencies": {
-    "http-client": "^4.0.0",
+    "http-client": "^4.2.0",
     "tough-cookie": "^2.2.2"
   },
   "devDependencies": {
